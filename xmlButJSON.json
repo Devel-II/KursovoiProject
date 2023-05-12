@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Name 1",
+    "creator": "Creator 1",
+    "shortDescription": "Text text text text text text",
+    "longDescription": "Text text text text text text text text text text text text text text text text text text text text text text",
+    "htmlcode": "<html></html>",
+    "csscode": "div { width: 20px; }",
+    "jscode": "console.log(\"test 1\");"
+  },
+  {
+    "name": "Name 2",
+    "creator": "Creator 2",
+    "shortDescription": "Text text text text text text",
+    "longDescription": "Text text text text text text text text text text text text text text text text text text text text text text",
+    "htmlcode": "<html><head></head><body><div>Test</div></body></html>",
+    "csscode": "div { width: 40px; border: 1px solid black; }",
+    "jscode": "console.log(\"test 2\");"
+  }
+]

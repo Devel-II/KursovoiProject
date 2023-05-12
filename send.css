@@ -1,0 +1,72 @@
+
+@media screen and (min-width: 1200px) {
+    input[type='submit'] {
+        font-size: 24px;
+    }
+
+    #firstTextArea {
+        font-size: 6px;
+        width: 350px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    form, form > *, li {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    li {
+        margin-left: 24px;
+    }
+
+    input[type='submit'] {
+        font-size: 32px;
+    }
+    #firstTextArea {
+        width: calc(100% - 60px);
+    }
+}
+
+article > * {
+    padding: 10px;
+}
+
+ul > * {
+    padding-left: 20px;
+}
+
+input {
+    margin-left: 40px;
+}
+
+        input[type='file'] {
+            margin: 6px 0px 4px 20px;
+            display: block;
+        }
+
+        input[type='submit'] {
+            margin-top: 40px;
+            margin-left: 20px;
+            padding-right: 16px;
+            margin-bottom: 80px;
+        }
+
+li {
+    line-height: 24px;
+}
+
+#firstTextArea {
+    height: 80px;
+    resize: none;
+}
+
+#secondTextArea {
+    width: calc(100% - 60px);
+    height: 200px;
+    resize: none;
+}
+
+h2:first-child {
+    text-align: center;
+    margin: 8px;
+}

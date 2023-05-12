@@ -1,0 +1,21 @@
+article > * {
+    padding: 5px;
+}
+@media screen and (min-width: 1200px) {
+    input[type='button'] {
+        font-size: 18px;
+        padding: 4px;
+        margin: 4px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    input[type='button'] {
+        font-size: 28px;
+        padding: 12px;
+        margin: 12px;
+    }
+    code {
+        font-size: 24px !important;
+    }
+}

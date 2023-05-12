@@ -1,0 +1,154 @@
+/*Базовая верстка:*/
+* {
+    margin: 0px;
+}
+html, body {
+    height: 100%;
+    position: relative;
+}
+body {
+    background-image: url(assets/texture.png);
+    background-size: 120px 120px;
+}
+/*Основа*/
+@media screen and (min-width: 1200px) {
+    .main {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        width: 60%;
+        left: 20%;
+    }
+
+    header{
+        height: 100px;
+    }
+    .top_logo {
+        height: 70px;
+        background-size: 66px 66px;
+    }
+
+    .top_buttons {
+        height: 30px;
+    }
+
+    article {
+        padding-bottom: 50px;
+    }
+
+    footer {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        width: 100%;
+    }
+    article > * > p {
+        padding: 18px;
+    }
+
+
+    header {
+        height: 160px;
+    }
+    .top_logo {
+        height: 100px;
+        background-size: 96px 96px;
+        font-size: 30px;
+    }
+    .top_buttons {
+        height: 60px;
+    }
+        .top_buttons > button {
+            font-size: 24px;
+        }
+
+    article {
+        padding-bottom: 100px;
+    }
+    footer {
+        height: 80px;
+        font-size: 26px;
+    }
+}
+
+.main {
+    background-size: cover;
+    background-color: #E4D9C3;
+    background-image: url(assets/box_texture.png);
+    background-repeat: repeat;
+    background-size: 400px;
+    min-height: 100%;
+    position: relative;
+}
+/*Верх*/
+header {
+    background-color: #D8BD8A;
+    background-image: url(assets/texture2.png);
+    background-size: 140px 140px;
+    width: 100%;
+}
+
+.top_logo {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-image: url(assets/logo.svg);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: right 5px top 0px;
+}
+
+.top_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+    .top_buttons > * {
+        border: 0px;
+        background-color: white;
+        height: 100%;
+        width: 33%;
+        padding: 0px;
+        font-weight: bold;
+    }
+.top_buttons > *:last-child {
+    width: 34%;
+}
+.top_buttons > * {
+    transition-duration: 0.4s;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+}
+.top_buttons > *:hover {
+    background-color: black;
+    color: white;
+}
+
+.top_buttons > *:not(:first-child) {
+    border-left: 1px solid black;
+}        
+
+/*Центр*/
+
+article {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+/*Низ*/
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}

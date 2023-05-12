@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<main>
+  <element>
+    <name>Базовый шаблон 1</name>
+    <creator>ШВС</creator>
+    <shortDescription>Шаблон расчитанный для широкоформатных мониторов. Использует семантические теги.</shortDescription>
+    <imgPreviewName>Template 1.png</imgPreviewName>
+    <longDescription>Шаблон расчитанный для широкоформатных мониторов. Не расчитан под телефоны. Для разметки используется семантические теги.</longDescription>
+    <htmlcode><![CDATA[<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <header>
+        <h1>
+            header
+        </h1>
+    </header>
+    <article>
+        <br />
+        <section>
+            article-section
+        </section>
+        <aside>article-aside</aside>
+        <section>
+            article-section
+        </section>
+        <br />
+    </article>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+</html>]]></htmlcode>
+    <csscode><![CDATA[* {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    border: solid;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-color: black;
+    position: sticky;
+    height: 80px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+article {
+	font-size: 24px;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: calc(100% - 202px);
+    position: fixed;
+    right: 12.5%;
+    left: 12.5%;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+footer {
+    border: solid;
+    border-width: 0;
+    border-top-width: 2px;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    display: grid;
+    align-items: end;
+    padding-bottom: 20px;
+}
+aside {
+    width: 40%;
+    margin-left: 10px;
+    float: right;
+    display: inline;
+    padding-left: 10px;
+    box-shadow: -1px 0px 0px black;
+}]]></csscode>
+    <jscode><![CDATA[console.log("test");]]></jscode>
+  </element>
+  <element>
+    <name>Базовый шаблон 2</name>
+    <creator>ШВС</creator>
+    <shortDescription>Шаблон, что используется для базовый разметки страниц на этом сайте</shortDescription>
+    <imgPreviewName>Template 2.png</imgPreviewName>
+    <longDescription>Данный шаблон используется для разметки этого сайта. Можете использовать его по своему желанию. Нужды в дополнительных материалах нету.</longDescription>
+    <htmlcode><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Главная</title>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="top_1">
+              Верхняя часть верха
+            </div>
+            <div class="top_2">
+              Нижняя часть верха
+            </div>
+        </div>
+
+        <div class="center">
+            Контент
+        </div>
+
+        <div class="bottom">
+            Низ
+        </div>
+
+    </div>
+</body>
+</html>]]></htmlcode>
+    <csscode>
+      <![CDATA[/*Базовая верстка:*/
+* {
+    margin: 0px;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+/*Для лучшего предосмотра:*/
+.main > * {
+    border: 1px solid black; /*Для обозначения границ для лучшего просмотра*/
+}
+/*Основа*/
+@media screen and (min-width: 1200px) {
+    .main {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        width: 60%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        width: calc(100% - 2px);
+    }
+}
+
+
+.main {
+    min-height: 100%;
+    position: relative;
+}
+/*Верх*/
+.top {
+    height: 100px;
+    width: 100%;
+}
+
+.top_1 {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 70px;
+}
+
+.top_2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.top_2 > * {
+    border: 0px;
+    height: 100%;
+    /*Место для указания размеров элементов для нижней части топа (например: кнопок)*/
+    padding: 0px;
+}
+.center {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+/*Низ*/
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}]]></csscode>
+    <jscode></jscode>
+  </element>
+  <element>
+    <name>Базовый шаблон 3</name>
+    <creator>ШВС</creator>
+    <shortDescription>Краткое описание</shortDescription>
+    <imgPreviewName>Template TEST.png</imgPreviewName>
+    <longDescription>Длинное описание</longDescription>
+    <htmlcode>
+      <![CDATA[
+      <html>
+        
+      </html>
+     ]]>
+    </htmlcode>
+    <csscode>
+      <![CDATA[
+        div { width: 20px; }
+     ]]>
+    </csscode>
+    <jscode>
+      <![CDATA[
+      console.log("test");
+     ]]>
+    </jscode>
+  </element>
+  <element>
+    <name>Базовый шаблон 4</name>
+    <creator>ШВС</creator>
+    <shortDescription>Краткое описание</shortDescription>
+    <imgPreviewName>Template TEST.png</imgPreviewName>
+    <longDescription>Длинное описание</longDescription>
+    <htmlcode>
+      <![CDATA[
+      <html>
+        
+      </html>
+     ]]>
+    </htmlcode>
+    <csscode>
+      <![CDATA[
+        div { width: 20px; }
+     ]]>
+    </csscode>
+    <jscode>
+      <![CDATA[
+      console.log("test");
+     ]]>
+    </jscode>
+  </element>
+</main>

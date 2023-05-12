@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Просмотр шаблона</title>
+</head>
+<body>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="view.css">
+    <link rel="stylesheet" href="assets/prism.css">
+
+    <div class="main">
+        <header>
+            <div class="top_logo">
+                <h1>Шаблоны веб-страниц</h1>
+            </div>
+            <div class="top_buttons">
+                <button onclick="window.location.href='general.html';">Главная</button>
+                <button onclick="window.location.href='list.html';">Шаблоны</button>
+                <button onclick="window.location.href='send.html';">Отправка своего шаблона</button>
+            </div>
+        </header>
+
+        <article>
+            <h2 id="name"></h2>
+            <h2 id="author"></h2>
+            <p id="shortDescription"></p>
+            <p id="previewImage"></p>
+            <p id="longDescription"></p>
+            <input type="button" value="Предпросмотр" onclick="openPreviewTab()" />
+            <h3>Код HTML:</h3>
+<pre><code class="language-HTML" id="htmlcode">
+</code></pre>
+            <h3>Код CSS:</h3>
+<pre><code class="language-css" id="csscode">
+</code></pre>
+            <h3>Код JS:</h3>
+<pre><code class="language-js" id="jscode">
+</code></pre>
+
+        </article>
+
+        <footer>
+            <p>Место для копирайта © 2023-2023</p>
+            <p>Багласов Александр Андреевич, ФИТ, ИСИТ, группа 2, 2023 год</p>
+        </footer>
+
+    </div>
+
+
+    <script src="xmllistener.js"></script>
+    <script src="assets/prism.js"></script>
+</body>
+</html>

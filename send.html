@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Отправка</title>
+</head>
+<body>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="send.css">
+
+    <div class="main">
+        <header>
+            <div class="top_logo">
+                <h1>Шаблоны веб-страниц</h1>
+            </div>
+            <div class="top_buttons">
+                <button onclick="window.location.href='general.html';">Главная</button>
+                <button onclick="window.location.href='list.html';">Шаблоны</button>
+                <button onclick="window.location.href='send.html';">Отправка своего шаблона</button>
+            </div>
+        </header>
+
+
+        <article>
+            <form name=input>
+                <h3>Отправка своего шаблона</h3>
+                <h2>Для отправки своего шаблона необходимо:</h2>
+                <ul><li>Название шаблона</li></ul>
+                <input type='text' name='name' required>
+                <ul><li>Как к вам обращаться</li></ul>
+                <input type='text' name='name' required>
+                <ul><li>Ваша контактная информация (почта)</li></ul>
+                <input type='email' name='email' required>
+                <ul><li>Файлы</li></ul>
+                HTML (обязательно):
+                <input type='file' accept=".html" required>
+                CSS:
+                <input type='file' accept=".css">
+                JS:
+                <input type='file' accept=".js">
+                Изображение превью:
+                <input type='file' accept=".png,.jpg,.jpeg">
+                <ul><li>Краткое описание шаблона (ограничение в 200 символов)</li></ul>
+                <textarea id="firstTextArea" maxlength="200"></textarea>
+                <ul><li>Подробное описание шаблона</li></ul>
+                <textarea id="secondTextArea"></textarea>
+                <input type='submit' value="Отправить">
+
+            </form>
+        </article>
+
+        <footer>
+            <p>Место для копирайта © 2023-2023</p>
+            <p>Багласов Александр Андреевич, ФИТ, ИСИТ, группа 2, 2023 год</p>
+        </footer>
+
+    </div>
+</body>
+</html>

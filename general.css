@@ -1,0 +1,16 @@
+article > * {
+    margin: 8px;
+}
+h2 {
+    font-size: 36px;
+    padding: 10px;
+    text-align: center;
+}
+h3 {
+    font-size: 28px;
+}
+article > p, ul > p {
+    font-size: 20px;
+    text-indent: 20px;
+    padding-bottom: 4px;
+}
